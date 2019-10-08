@@ -1,0 +1,297 @@
+{
+  "m" :
+  {
+    "class" : "d",
+    "base" : true,
+    "sign" : "m"
+  },
+  "km" :
+  {
+    "class" : "d",
+    "to"    : 1000,
+    "sign"  : "km"
+  },
+  "cm" :
+  {
+    "class" : "d",
+    "to"    : 0.01,
+    "sign"  : "cm"
+  },
+  "mm" :
+  {
+    "class" : "d",
+    "to"    : 0.001,
+    "sign"  : "mm"
+  },
+  "mi" :
+  {
+    "class" : "d",
+    "to"    : 1609.34,
+    "sign"  : "mi"
+  },
+  "ft" :
+  {
+    "class" : "d",
+    "to"    : 0.3048,
+    "sign"  : "'"
+  },
+  "in" :
+  {
+    "class" : "d",
+    "to"    : 39.3701,
+    "sign"  : "\""
+  },
+  "yd" :
+  {
+    "class" : "d",
+    "to"    : 0.9144,
+    "sign"  : "yd"
+  },
+  "wa" :
+  {
+    "class" : "d",
+    "to"    : 2,
+    "sign"  : "wa"
+  },
+  "ha" :
+  {
+    "class" : "a",
+    "base"  : true,
+    "sign"  : "ha"
+  },
+  "ac" :
+  {
+    "class" : "a",
+    "to"    : 0.404686,
+    "sign"  : "ac"
+  },
+  "m2" :
+  {
+    "class" : "a",
+    "to"    : 0.0001,
+    "sign"  : "m2"
+  },
+  "rai" :
+  {
+    "class" : "a",
+    "to"    : 0.16,
+    "sign"  : "rai"
+  },
+  "mu":
+  {
+    "class" : "a",
+    "to"    : 0.0666666,
+    "sign"  : "mu"
+  }, 
+  "g" :
+  {
+    "class" : "m",
+    "base" : true,
+    "sign" : "g"
+  },
+  "kg" :
+  {
+    "class" : "m",
+    "to"    : 1000,
+    "sign"  : "kg"
+  },
+  "mg" :
+  {
+    "class" : "m",
+    "to"    : 0.001,
+    "sign"  : "mg"
+  },
+  "qq":
+  {
+    "class" : "m",
+    "to"    : 100000,
+    "sign"  : "qq"
+  }, 
+  "lb" :
+  {
+    "class" : "m",
+    "to"    : 453.592,
+    "sign"  : "lb"
+  },
+  "oz" :
+  {
+    "class" : "m",
+    "to"    : 28.3495,
+    "sign"  : "oz"
+  },
+  "stn" :
+  {
+    "class" : "m",
+    "to"    : 6350.29,
+    "sign"  : "st"
+  },
+  "tonne" :
+  {
+    "class" : "m",
+    "to"    : 1000000,
+    "sign"  : "t"
+  },
+  "l" :
+  {
+    "class" : "v",
+    "base"  : true,
+    "sign"  : "L"
+  },
+  "ml" :
+  {
+    "class" : "v",
+    "to"    : 0.001,
+    "sign"  : "mL"
+  },
+  "cp" :
+  {
+    "class" : "v",
+    "to"    : 0.250,
+    "sign"  : "cp"
+  },
+  "cp-us" :
+  {
+    "class" : "v",
+    "to"    : 0.236588,
+    "sign"  : "cp"
+  },
+  "cp-us-l" :
+  {
+    "class" : "v",
+    "to"    : 0.240,
+    "sign"  : "cp"
+  },
+  "pt" :
+  {
+    "class" : "v",
+    "to"    : 0.568261,
+    "sign"  : "pt"
+  },
+  "pt-us" :
+  {
+    "class" : "v",
+    "to"    : 0.473176,
+    "sign"  : "pt"
+  },
+  "qt" : 
+  {
+    "class" : "v",
+    "to"    : 1.13652,
+    "sign"  : "qt"
+  },
+  "qt-us" :
+  {
+    "class" : "v",
+    "to"    : 0.946353,
+    "sign"  : "qt"
+  },
+  "gal" :
+  {
+    "class" : "v",
+    "to"    : 4.54609,
+    "sign"  : "gal"
+  },
+  "gal-us" :
+  {
+    "class" : "v",
+    "to"    : 3.78541,
+    "sign"  : "gal"
+  },
+  "floz" :
+  {
+    "class" : "v",
+    "to"    : 0.0284131,
+    "sign"  : "fl. oz"
+  },
+  "floz-us" :
+  {
+    "class" : "v",
+    "to"    : 0.0295735,
+    "sign"  : "fl. oz"
+  },
+  "bu" :
+  {
+    "class" : "v",
+    "to"    : 35.239072,
+    "sign"  : "bu"
+  },
+  "sec" :
+  {
+    "class" : "t",
+    "base"  : true,
+    "sign"  : "sec"
+  },
+  "min" :
+  {
+    "class" : "t",
+    "to"    : 60,
+    "sign"  : "min"
+  },
+  "hour" :
+  {
+    "class" : "t",
+    "to"    : 3600,
+    "sign"  : "hr"
+  },
+  "day" :
+  {
+    "class" : "t",
+    "to"    : 86400,
+    "sign"  : "day"
+  },
+  "month" :
+  {
+    "class" : "t",
+    "to"    : 2592000,
+    "sign"  : "mth"
+  },
+  "year" :
+  {
+    "class" : "t",
+    "to"    : 31536000,
+    "sign"  : "yr"
+  },
+  "b" :
+  {
+    "class" : "b",
+    "step"  : 1024,
+    "pos"   : 0,
+    "sign"  : "B"
+  },
+  "kb" :
+  {
+    "class" : "b",
+    "pos"   : 1,
+    "sign"  : "KiB"
+  },
+  "mb" :
+  {
+    "class" : "b",
+    "pos"   : 2,
+    "sign"  : "MiB"
+  },
+  "gb" :
+  {
+    "class" : "b",
+    "pos"   : 3,
+    "sign"  : "GiB"
+  },
+  "tb" :
+  {
+    "class" : "b",
+    "pos"   : 4,
+    "sign"  : "TiB"
+  },
+  "pb" :
+  {
+    "class" : "b",
+    "pos"   : 5,
+    "sign"  : "PiB"
+  },
+  "eb" :
+  {
+    "class" : "b",
+    "pos"   : 6,
+    "sign"  : "EiB"
+  }
+}
