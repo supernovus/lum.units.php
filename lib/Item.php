@@ -4,20 +4,32 @@ namespace Lum\Units;
 
 class Item
 {
+  public $ident; // A unit identifier. Usually short and simple.
   public $class; // Our Unit Class.
   public $to;    // Multiply by this to convert this to a base value.
   public $pos;   // The position, for a stepping unit.
   public $sign;  // The symbol to use for the unit in expressions.
 
-  public function __construct ($opts, $class)
+  public function __construct ($opts, $class, $ident=null)
   {
-    $this->class = $class;
-    foreach (['to','pos','sign'] as $field)
+    $this->class = $class; // Our parent TypeClass.
+    $this->ident = $ident; // This may be overwritten by the 'ident' option.
+
+    foreach (['to','pos','sign','ident'] as $field)
     {
       if (isset($opts[$field]))
       {
         $this->$field = $opts[$field];
       }
+    }
+
+    if (!isset($this->ident) && isset($this->sign))
+    { // Use the sign as the ident.
+      $this->ident = $this->sign;
+    }
+    elseif (!isset($this->sign) && isset($this->ident))
+    { // Use the ident as the sign.
+      $this->sign = $this->ident;
     }
   }
 
@@ -41,8 +53,8 @@ class Item
 
   public function convert ($value, $unit)
   {
-    if (is_string($unit))
-    {
+    if (is_string($unit) && isset($this->class[$unit]))
+    { // Get the unit from our typeclass.
       $unit = $this->class[$unit];
     }
     if (isset($unit) && $unit instanceof Item)

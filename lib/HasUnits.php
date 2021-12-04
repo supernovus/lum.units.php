@@ -9,7 +9,7 @@ namespace Lum\Units;
  */
 trait HasUnits
 {
-  protected $units;
+  protected $units = [];
 
   public function getUnits ()
   {
@@ -27,6 +27,34 @@ trait HasUnits
       return $from->convert($value, $to);
     }
     throw new Exception("Invalid 'from' unit passed to convert()");
+  }
+
+  /**
+   * Add a new unit Item object.
+   */
+  public function addUnit (Item $unit, $ident=null)
+  {
+    if (!$ident)
+    { // No ident passed, find one in the Item.
+      if ($unit->ident)
+        $ident = $unit->ident;
+      else
+        throw new Exception("No identifier found for unit");
+    }
+    elseif (!isset($unit->ident))
+    { // The unit Item has no ident, set it. 
+      $unit->ident = $ident;
+    }
+
+    if (isset($this->units[$unit]))
+    {
+      throw new Exception("Attempt to overwrite existing unit '$ident'");
+    }
+
+    // We passed all checks, let's assign it now.
+    $this->units[$ident] = $unit;
+
+    return $this;
   }
 
   /**
