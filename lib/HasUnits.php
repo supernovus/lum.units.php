@@ -60,7 +60,7 @@ trait HasUnits
   /**
    * Return the total count of units in our class.
    */
-  public function count ()
+  public function count (): int
   {
     return count($this->units);
   }
@@ -68,7 +68,7 @@ trait HasUnits
   /**
    * Does a unit exist?
    */
-  public function offsetExists ($offset)
+  public function offsetExists ($offset): bool
   {
     return isset($this->units[$offset]);
   }
@@ -76,7 +76,7 @@ trait HasUnits
   /**
    * Get a Unit
    */
-  public function offsetGet ($offset)
+  public function offsetGet ($offset): mixed
   {
     if (isset($this->units[$offset]))
       return $this->units[$offset];
@@ -85,7 +85,7 @@ trait HasUnits
   /**
    * Add a unit to our units.
    */
-  public function offsetSet ($offset, $value)
+  public function offsetSet ($offset, $value): void
   {
     if ($value instanceof Item)
       $this->units[$offset] = $value;
@@ -96,34 +96,34 @@ trait HasUnits
   /**
    * We don't allow unsetting units.
    */
-  public function offsetUnset ($offset)
+  public function offsetUnset ($offset): void
   {
     throw new Exception("Cannot unset Units.");
   }
 
   // Iterator interface.
 
-  public function current ()
+  public function current (): mixed
   {
     return current($this->units);
   }
 
-  public function key ()
+  public function key (): mixed
   {
     return key($this->units);
   }
 
-  public function next ()
+  public function next (): void
   {
-    return next($this->units);
+    next($this->units);
   }
 
-  public function rewind ()
+  public function rewind (): void
   {
-    return reset($this->units);
+    reset($this->units);
   }
 
-  public function valid ()
+  public function valid (): bool
   {
     return ($this->current() !== False);
   }
