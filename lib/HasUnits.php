@@ -46,7 +46,7 @@ trait HasUnits
       $unit->ident = $ident;
     }
 
-    if (isset($this->units[$unit]))
+    if (isset($this->units[$ident]))
     {
       throw new Exception("Attempt to overwrite existing unit '$ident'");
     }
